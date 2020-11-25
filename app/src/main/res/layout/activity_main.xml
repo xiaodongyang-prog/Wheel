@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.sing.wheel.LoopView
+    <com.alliances.yutils.wheelview.LoopView
         android:id="@+id/wheelView_loopview"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -17,12 +17,12 @@
         app:awv_textsize="15" />
 
 
-    <com.sing.wheel.WheelView
+    <com.alliances.yutils.wheelview.WheelView
         android:id="@+id/wheelView_"
         android:layout_alignParentRight="true"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerInParent="true"
         android:layout_weight="1"
-        android:visibility="visible"></com.sing.wheel.WheelView>
+        android:visibility="visible"></com.alliances.yutils.wheelview.WheelView>
 </RelativeLayout>

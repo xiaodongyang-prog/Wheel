@@ -2,8 +2,10 @@ package com.sing.wheel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Dialog;
 import android.os.Bundle;
+
+import com.alliances.yutils.wheelview.LoopView;
+import com.alliances.yutils.wheelview.WheelView;
 
 import java.util.Arrays;
 

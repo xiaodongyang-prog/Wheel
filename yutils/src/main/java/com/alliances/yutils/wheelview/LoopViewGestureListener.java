@@ -2,7 +2,7 @@
 // Jad home page: http://www.geocities.com/kpdus/jad.html
 // Decompiler options: braces fieldsfirst space lnc 
 
-package com.sing.wheel;
+package com.alliances.yutils.wheelview;
 
 import android.view.MotionEvent;
 

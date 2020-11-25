@@ -2,12 +2,10 @@
 // Jad home page: http://www.geocities.com/kpdus/jad.html
 // Decompiler options: braces fieldsfirst space lnc 
 
-package com.sing.wheel;
+package com.alliances.yutils.wheelview;
 
 // Referenced classes of package com.qingchifan.view:
 //            LoopView, OnItemSelectedListener
-
-import android.util.Log;
 
 final class OnItemSelectedRunnable implements Runnable {
     final LoopView loopView;

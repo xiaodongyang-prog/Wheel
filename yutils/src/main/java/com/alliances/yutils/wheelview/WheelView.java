@@ -1,4 +1,4 @@
-package com.sing.wheel;
+package com.alliances.yutils.wheelview;
 
 import android.app.Activity;
 import android.content.Context;

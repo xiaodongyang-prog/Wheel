@@ -1,4 +1,4 @@
-package com.sing.wheel;
+package com.alliances.yutils.wheelview;
 
 public interface OnItemScrollListener {
     /**

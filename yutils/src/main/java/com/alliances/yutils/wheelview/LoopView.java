@@ -1,4 +1,4 @@
-package com.sing.wheel;
+package com.alliances.yutils.wheelview;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;

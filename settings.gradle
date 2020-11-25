@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':yutils'
 rootProject.name='Wheel'
