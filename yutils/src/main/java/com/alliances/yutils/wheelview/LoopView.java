@@ -14,6 +14,8 @@ import android.view.MotionEvent;
 import android.view.View;
 
 
+import com.alliances.yutils.R;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
