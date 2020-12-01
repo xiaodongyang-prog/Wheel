@@ -11,4 +11,20 @@
         <attr name="awv_initialPosition" format="integer" />
         <attr name="awv_scaleX" format="float" />
     </declare-styleable>
+
+    <!-- TitleBarView -->
+    <declare-styleable name="TitleBarView">
+        <attr name="title_text" format="string"></attr>
+        <attr name="left_text" format="string"></attr>
+        <attr name="right_text" format="string"></attr>
+        <attr name="title_text_color" format="color"></attr>
+        <!-- 左右两边的TextView颜色统一 -->
+        <attr name="left_right_text_color" format="color"></attr>
+        <!-- 左右Drawable -->
+        <attr name="leftDrawable" format="reference"></attr>
+        <attr name="rightDrawable" format="integer"></attr>
+        <!-- 无用，但是牵扯地方较多，暂不删除 -->
+        <attr name="title_text_size" format="integer"></attr>
+        <attr name="titleBackgroundColor" format="color"></attr>
+    </declare-styleable>
 </resources>
