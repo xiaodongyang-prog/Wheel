@@ -28,7 +28,7 @@
             android:contentDescription="@string/empty"
             android:gravity="center"
             android:includeFontPadding="false"
-            android:src="@mipmap/back"
+            android:src="@drawable/back2x"
             android:visibility="visible" />
 
         <TextView
