@@ -2,8 +2,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/title_bar_view_layout"
     android:layout_width="fill_parent"
+    android:background="@color/white"
     android:layout_height="wrap_content"
-    android:background="@color/gray"
+
     android:orientation="vertical">
 
     <!-- 左 -->

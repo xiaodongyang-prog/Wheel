@@ -74,7 +74,7 @@ public class TitleBarView extends LinearLayout {
 
         leftStr = ta.getString(R.styleable.TitleBarView_left_text);
         rightStr = ta.getString(R.styleable.TitleBarView_right_text);
-        leftDrawable = ta.getResourceId(R.styleable.TitleBarView_leftDrawable, R.mipmap.back);
+        leftDrawable = ta.getResourceId(R.styleable.TitleBarView_leftDrawable, R.drawable.back2x);
         rightDrawable = ta.getResourceId(R.styleable.TitleBarView_rightDrawable, R.color.white);
         mLeftDrawable = ta.getDrawable(R.styleable.TitleBarView_leftDrawable);
         //背景颜色-左右-title 颜色
