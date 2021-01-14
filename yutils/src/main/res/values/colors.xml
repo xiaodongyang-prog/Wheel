@@ -5,4 +5,6 @@
     <color name="gray">#50000000</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="dodger_blue">#3C73FD</color>
+    <color name="mercury">#E4E4E4</color>
 </resources>

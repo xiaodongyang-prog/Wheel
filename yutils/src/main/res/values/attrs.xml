@@ -27,4 +27,10 @@
         <attr name="title_text_size" format="integer"></attr>
         <attr name="titleBackgroundColor" format="color"></attr>
     </declare-styleable>
+    <declare-styleable name="LoadingButton">
+        <attr name="loading_mode" format="integer"></attr>
+        <attr name="normal_color" format="color"></attr>
+        <attr name="loading_color" format="color"></attr>
+        <attr name="corner_radius" format="integer"></attr>
+    </declare-styleable>
 </resources>
