@@ -2,5 +2,5 @@
     <string name="app_name">YUtils</string>
     <string name="empty"></string>
     <string name="go_back">返回</string>
-    <string name="download_new_apk">正在下载新版本</string>
+    <string name="download_new_apk">正在下载</string>
 </resources>

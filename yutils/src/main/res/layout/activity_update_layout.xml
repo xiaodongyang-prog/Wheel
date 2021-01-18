@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:minWidth="400dp"
+    android:orientation="vertical"
+    android:padding="22dp"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:gravity="left|center_vertical"
+                android:text="发现新版本"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.3"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:text="get_new_version_update" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <Button
+                android:id="@+id/apk_update_finish"
+                style="@style/ActionButton"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/apk_update_finish"
+                android:stateListAnimator="@null"
+                android:text="关闭APP"
+                android:textColor="@color/black" />
+            <Button
+                android:id="@+id/apk_update_sure"
+                android:layout_width="56dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/apk_update_sure"
+                android:stateListAnimator="@null"
+                android:text="立即升级"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+            <com.alliances.yutils.view.LoadingButton
+                android:id="@+id/loading_button"
+                android:layout_width="56dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                app:loading_color="@color/dodger_blue"
+                app:normal_color="@color/gray"></com.alliances.yutils.view.LoadingButton>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+

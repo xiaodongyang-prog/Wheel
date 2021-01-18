@@ -15,18 +15,41 @@
         app:title_text_size="17"></com.alliances.yutils.title.TitleBarView>
 
 
-    <com.alliances.yutils.view.LoadingButton
-        android:id="@+id/loading_button"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:text="100%"
-        android:layout_margin="5dp"
-        android:textSize="15sp"
-        android:gravity="center"
-        android:textColor="@color/dodger_blue"
-        android:layout_height="50dp"
-        app:corner_radius="50"
-        app:loading_color="@color/dodger_blue"
-        app:normal_color="@color/gray"></com.alliances.yutils.view.LoadingButton>
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/apk_update_finish"
+            style="@style/ActionButton"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/apk_update_finish"
+            android:stateListAnimator="@null"
+            android:text="关闭APP"
+            android:textColor="@color/black" />
+
+
+        <com.alliances.yutils.view.LoadingButton
+            android:id="@+id/loading_button"
+            android:layout_width="56dp"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/dodger_blue"
+            android:layout_height="40dp"
+            app:loading_color="@color/dodger_blue"
+            app:normal_color="@color/gray"></com.alliances.yutils.view.LoadingButton>
+
+
+    </LinearLayout>
+
 
 
 

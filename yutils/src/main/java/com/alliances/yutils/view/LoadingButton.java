@@ -141,7 +141,8 @@ public class LoadingButton extends View {
                 if (mProgress >= mMaxProgress / 2) {
                     mPaint.setColor(Color.WHITE);
                 }
-                canvas.drawText(getResources().getString(R.string.download_new_apk), baseRect.centerX(), baseline, mPaint);
+                RectF loadRect = new RectF(0,0,getWidth()-getHeight(),getHeight());
+                canvas.drawText(getResources().getString(R.string.download_new_apk), loadRect.centerX(), baseline, mPaint);
             }
         }
         super.onDraw(canvas);
