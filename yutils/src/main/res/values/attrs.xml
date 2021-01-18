@@ -31,6 +31,27 @@
         <attr name="loading_mode" format="integer"></attr>
         <attr name="normal_color" format="color"></attr>
         <attr name="loading_color" format="color"></attr>
+        <!-- 废弃 -->
         <attr name="corner_radius" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="ImitateKeepButton">
+        <attr name="ring_bg_color" format="color|reference"/>
+        <attr name="ring_color" format="color|reference" />
+        <attr name="ring_size" format="dimension" />
+        <attr name="circle_color" format="color|reference" />
+        <attr name="content_text" format="string" />
+        <attr name="content_text_color" format="color|reference" />
+        <attr name="content_text_size" format="dimension" />
+        <attr name="radius" format="dimension" />
+        <attr name="space" format="dimension" />
+        <attr name="narrow_down" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LoadingView">
+        <attr name="loading_renderer">
+            <!--circle rotate-->
+            <enum name="ElectricFanLoadingRenderer" value="9"/>
+        </attr>
     </declare-styleable>
 </resources>

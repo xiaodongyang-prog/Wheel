@@ -7,4 +7,6 @@
     <color name="black">#000000</color>
     <color name="dodger_blue">#3C73FD</color>
     <color name="mercury">#E4E4E4</color>
+    <color name="sea_shell_solid">#F1F1F1</color>
+<color name="concrete_solid">#F2F2F2</color>
 </resources>
