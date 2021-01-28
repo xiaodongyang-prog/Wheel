@@ -1,4 +1,4 @@
-package com.alliances.yutils.view;
+package com.alliances.yutils.view.loading;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
@@ -8,24 +8,16 @@ import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
 import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 
-import androidx.annotation.NonNull;
-
 import com.alliances.yutils.utils.LocalDisplay;
 
 import java.util.Timer;
-import java.util.TimerTask;
-
-import static android.os.Looper.getMainLooper;
 
 
- abstract class LoadingRenderer {
+abstract class LoadingRenderer {
     private static final long ANIMATION_DURATION = 1333;
     private static final float DEFAULT_SIZE = 56.0f;
     float i = 0;

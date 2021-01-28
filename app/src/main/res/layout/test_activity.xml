@@ -35,7 +35,7 @@
             android:textColor="@color/black" />
 
 
-        <com.alliances.yutils.view.LoadingButton
+        <com.alliances.yutils.view.loading.LoadingButton
             android:id="@+id/loading_button"
             android:layout_width="56dp"
             android:layout_margin="5dp"
@@ -45,7 +45,7 @@
             android:textColor="@color/dodger_blue"
             android:layout_height="40dp"
             app:loading_color="@color/dodger_blue"
-            app:normal_color="@color/gray"></com.alliances.yutils.view.LoadingButton>
+            app:normal_color="@color/gray"></com.alliances.yutils.view.loading.LoadingButton>
 
 
     </LinearLayout>

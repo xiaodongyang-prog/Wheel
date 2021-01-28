@@ -1,4 +1,4 @@
-package com.alliances.yutils.view;
+package com.alliances.yutils.view.loading;
 
 import android.content.Context;
 import android.util.SparseArray;

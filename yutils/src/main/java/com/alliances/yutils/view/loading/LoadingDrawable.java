@@ -1,4 +1,4 @@
-package com.alliances.yutils.view;
+package com.alliances.yutils.view.loading;
 
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;

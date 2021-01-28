@@ -1,4 +1,4 @@
-package com.alliances.yutils.view;
+package com.alliances.yutils.view.loading;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -24,7 +24,6 @@ import androidx.annotation.IntDef;
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
-import com.alliances.yutils.R;
 import com.alliances.yutils.utils.LocalDisplay;
 
 import java.lang.annotation.Retention;

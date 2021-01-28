@@ -87,7 +87,7 @@
                 android:textColor="@color/white"
                 android:visibility="visible" />
 
-            <com.alliances.yutils.view.LoadingButton
+            <com.alliances.yutils.view.loading.LoadingButton
                 android:id="@+id/loading_button"
                 android:layout_width="56dp"
                 android:paddingLeft="4dp"
@@ -98,7 +98,7 @@
                 android:layout_marginLeft="10dp"
                 android:gravity="center"
                 app:loading_color="@color/dodger_blue"
-                app:normal_color="@color/gray"></com.alliances.yutils.view.LoadingButton>
+                app:normal_color="@color/gray"></com.alliances.yutils.view.loading.LoadingButton>
 
         </LinearLayout>
 

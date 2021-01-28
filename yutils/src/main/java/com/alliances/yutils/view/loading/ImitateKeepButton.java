@@ -1,4 +1,4 @@
-package com.alliances.yutils.view;
+package com.alliances.yutils.view.loading;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

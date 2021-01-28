@@ -1,10 +1,9 @@
-package com.alliances.yutils.view;
+package com.alliances.yutils.view.loading;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.ImageView;
 
 import com.alliances.yutils.R;
 

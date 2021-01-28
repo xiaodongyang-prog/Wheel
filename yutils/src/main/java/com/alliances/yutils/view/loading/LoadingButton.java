@@ -1,4 +1,4 @@
-package com.alliances.yutils.view;
+package com.alliances.yutils.view.loading;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -137,12 +137,13 @@ public class LoadingButton extends View {
 
 
             if (mProgress >= 1) {
+                String loadTextRes = mProgress == mMaxProgress?getResources().getString(R.string.download_finish):getResources().getString(R.string.download_new_apk);
                 mPaint.setColor(getResources().getColor(R.color.dodger_blue));
                 if (mProgress >= mMaxProgress / 2) {
                     mPaint.setColor(Color.WHITE);
                 }
                 RectF loadRect = new RectF(0,0,getWidth()-getHeight(),getHeight());
-                canvas.drawText(getResources().getString(R.string.download_new_apk), loadRect.centerX(), baseline, mPaint);
+                canvas.drawText(loadTextRes, loadRect.centerX(), baseline, mPaint);
             }
         }
         super.onDraw(canvas);
