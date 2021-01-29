@@ -15,4 +15,6 @@ public class County extends BaseModel {
     public int city_id;
     @Column
     public String name;
+    @Column
+    public String province_id;
 }
