@@ -6,17 +6,9 @@ import android.util.Log;
 
 import com.alliances.yutils.utils.FileUtils;
 import com.alliances.yutils.view.address.model.City;
-import com.alliances.yutils.view.address.model.City_Table;
 import com.alliances.yutils.view.address.model.County;
-import com.alliances.yutils.view.address.model.County_Table;
 import com.alliances.yutils.view.address.model.Province;
 import com.alliances.yutils.view.address.model.Street;
-import com.alliances.yutils.view.address.model.Street_Table;
-import com.raizlabs.android.dbflow.config.FlowConfig;
-import com.raizlabs.android.dbflow.config.FlowManager;
-import com.raizlabs.android.dbflow.list.FlowQueryList;
-import com.raizlabs.android.dbflow.sql.language.SQLite;
-import com.raizlabs.android.dbflow.structure.database.transaction.Transaction;
 
 import org.json.JSONArray;
 
@@ -27,30 +19,37 @@ public class AsyncAddressProvider implements AddressProvider {
     private Context context;
     public AsyncAddressProvider(Context context) {
         this.context = context;
-        FlowManager.init(new FlowConfig.Builder(context.getApplicationContext()).build());
     }
 
     @Override
     public void provideProvinces(final AddressReceiver<Province> addressReceiver) {
+        Log.i("province","start" + System.currentTimeMillis());
         List<Province> addresses = FileUtils.getAddress(context);
         addressReceiver.send(new ArrayList<>(addresses));
+        Log.i("province","end" + System.currentTimeMillis());
     }
 
     @Override
     public void provideCitiesWith(int provinceId, final AddressReceiver<City> addressReceiver) {
+        Log.i("city","start" + System.currentTimeMillis());
         List<City> citys = FileUtils.getCity(context,String.valueOf(provinceId));
+        Log.i("city","end" + System.currentTimeMillis());
         addressReceiver.send(new ArrayList<>(citys));
     }
 
     @Override
     public void provideCountiesWith(int cityId, final AddressReceiver<County> addressReceiver) {
+        Log.i("county","start" + System.currentTimeMillis());
         List<County> counties = FileUtils.getCounty(context,String.valueOf(cityId));
         addressReceiver.send(new ArrayList<>(counties));
+        Log.i("county","end" + System.currentTimeMillis());
     }
 
     @Override
     public void provideStreetsWith(int countyId, final AddressReceiver<Street> addressReceiver) {
+        Log.i("street","start" + System.currentTimeMillis());
         List<Street> streets = FileUtils.getStreet(context,String.valueOf(countyId));
         addressReceiver.send(new ArrayList<>(streets));
+        Log.i("street","end" + System.currentTimeMillis());
     }
 }

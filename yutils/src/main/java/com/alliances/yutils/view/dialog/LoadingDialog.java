@@ -1,4 +1,4 @@
-package com.alliances.yutils.view.loading;
+package com.alliances.yutils.view.dialog;
 
 
 import android.app.Dialog;

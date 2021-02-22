@@ -9,12 +9,42 @@ import com.alliances.yutils.view.address.model.Province;
 import com.alliances.yutils.view.address.model.Street;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class FileUtils {
+    public static final String DB_NAME = "Area.db";
+
+    /**
+     *
+     * @param context
+     */
+    public static void copyDataBase(Context context) {
+        try {
+            InputStream myInput = context.getAssets().open(DB_NAME);
+            File outFileName = context.getDatabasePath(DB_NAME);
+
+            outFileName.getParentFile().mkdirs();
+            OutputStream myOutput = new FileOutputStream(outFileName);
+            byte[] buffer = new byte[1024];
+            int length;
+            while ((length = myInput.read(buffer)) > 0) {
+                myOutput.write(buffer, 0, length);
+            }
+            myOutput.flush();
+            myOutput.close();
+            myInput.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     /**
      * @param context
@@ -59,12 +89,12 @@ public class FileUtils {
             List<City> cities = new ArrayList<>();
             String json = new String(arrayOutputStream.toByteArray());
             List<City> provinces = JSON.parseArray(json, City.class);
-            for (int i = 0; i < provinces.size(); i++) {
-                if (provinceId.equals(String.valueOf(provinces.get(i).province_id))) {
-                    cities.add(provinces.get(i));
-                }
-            }
-            return cities;
+//            for (int i = 0; i < provinces.size(); i++) {
+//                if (provinceId.equals(String.valueOf(provinces.get(i).province_id))) {
+//                    cities.add(provinces.get(i));
+//                }
+//            }
+            return provinces;
         } catch (Exception e) {
             return Collections.emptyList();
         }
@@ -89,24 +119,23 @@ public class FileUtils {
             List<County> counties = new ArrayList<>();
             String json = new String(arrayOutputStream.toByteArray());
             List<County> cities = JSON.parseArray(json, County.class);
-            for (int i = 0; i < cities.size(); i++) {
-                if (cityId.equals(String.valueOf(cities.get(i).city_id))) {
-                    counties.add(cities.get(i));
-                }
-            }
-            return counties;
+//            for (int i = 0; i < cities.size(); i++) {
+//                if (cityId.equals(String.valueOf(cities.get(i).city_id))) {
+//                    counties.add(cities.get(i));
+//                }
+//            }
+            return cities;
         } catch (Exception e) {
             return Collections.emptyList();
         }
     }
 
     /**
-     *
      * @param context
      * @param countyId
      * @return
      */
-    public static List<Street> getStreet(Context context,String countyId){
+    public static List<Street> getStreet(Context context, String countyId) {
         try {
             InputStream inputStream = context.getAssets().open("streets.json");
             ByteArrayOutputStream arrayOutputStream = new ByteArrayOutputStream();
@@ -121,12 +150,12 @@ public class FileUtils {
             List<Street> streets = new ArrayList<>();
             String json = new String(arrayOutputStream.toByteArray());
             List<Street> cities = JSON.parseArray(json, Street.class);
-            for (int i = 0; i < cities.size(); i++) {
-                if (countyId.equals(String.valueOf(cities.get(i).county_id))) {
-                    streets.add(cities.get(i));
-                }
-            }
-            return streets;
+//            for (int i = 0; i < cities.size(); i++) {
+//                if (countyId.equals(String.valueOf(cities.get(i).county_id))) {
+//                    streets.add(cities.get(i));
+//                }
+//            }
+            return cities;
         } catch (Exception e) {
             return Collections.emptyList();
         }

@@ -20,6 +20,7 @@ public class UninterceptableListView extends ListView {
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
+        //父布局禁用屏蔽事件
         getParent().requestDisallowInterceptTouchEvent(true);
         return super.onTouchEvent(ev);
     }
